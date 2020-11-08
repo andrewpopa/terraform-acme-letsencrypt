@@ -37,7 +37,7 @@ module "acme" {
 # Outputs
 | **Name**  | **Type** | **Description** |
 | ------------- | ------------- | ------------- |
-| id | string | Security group ID |
+| id | string | acme account id |
 | certificate_domain | string | certificate domain |
 | certificate_p12 | string | certificate in p12 format |
 | certificate_pem | string | certificate in pem format |
