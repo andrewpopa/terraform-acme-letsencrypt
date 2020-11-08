@@ -9,7 +9,7 @@ variable "email_address" {
 }
 
 variable "common_name" {
-  description = "The common name to use for the certificate."
+  description = "domain name certificate is created for"
   type        = string
 }
 

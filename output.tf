@@ -37,16 +37,16 @@ output "issuer_pem" {
 }
 
 output "private_key" {
-  description = "acme account private key in pem format"
+  description = "private key in pem format"
   value       = acme_certificate.certificate.private_key_pem
 }
 
 output "key_type" {
-  description = "acme account private key in pem format"
+  description = "key type"
   value       = acme_certificate.certificate.key_type
 }
 
 output "min_days_remaining" {
-  description = "acme account private key in pem format"
+  description = "certificate days"
   value       = acme_certificate.certificate.min_days_remaining
 }
