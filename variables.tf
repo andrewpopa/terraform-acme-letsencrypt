@@ -1,22 +1,24 @@
-variable "domain" {
-  description = "Domain name for certificate"
+variable "acme_provider" {
+  type = string
+  description = "acme provider"
+}
+
+variable "email_address" {
+  description = "email for acme registration"
   type        = string
-  default     = ""
+}
+
+variable "common_name" {
+  description = "The common name to use for the certificate."
+  type        = string
 }
 
 variable "dns_provider" {
-  description = "DNS provider"
+  description = "dns provider for validate"
   type        = string
-  default     = "cloudflare"
 }
 
 variable "dns_config" {
-  description = "DNS provider config"
-  type        = map
-}
-
-variable "email_requestor" {
-  description = "Email address of requestor"
-  type        = string
-  default     = ""
+  type = map(string)
+  description = "dns provider configuration"
 }

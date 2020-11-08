@@ -1,10 +1,12 @@
 module "acme" {
   source          = "../"
-  email_requestor = "EMAIL.REQUESTOR@DOMAIN.COM"
-  domain          = "YOUR-DOMAIN"
+  acme_provider = "https://acme-v02.api.letsencrypt.org/directory"
+  email_address = "andrew.popa@gmail.com"
+  common_name = "<domain>"
+  dns_provider = "<provider>"
   dns_config = {
-    CLOUDFLARE_EMAIL          = "CLOUDFLARE-EMAIL"
-    CLOUDFLARE_API_KEY        = "CLOUDFLARE-API-KEY"
-    CLOUDFLARE_ZONE_API_TOKEN = "CLOUDFLARE-API-TOKEN"
+    CLOUDFLARE_EMAIL          = "<email>"
+    CLOUDFLARE_API_KEY        = "<api-key>"
+    CLOUDFLARE_ZONE_API_TOKEN = "<zone-api-token>"
   }
 }
