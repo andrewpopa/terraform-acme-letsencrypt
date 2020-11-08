@@ -46,3 +46,14 @@ module "acme" {
 | private_key | string | private key in pem format |
 | key_type | string | key type |
 | min_days_remaining | string | certificate days |
+
+## Files output
+as result 5 files will be creates which can be reused in other places during the deployment
+
+```bash
+certificate.pem
+fullchain.pem
+chain.pem
+private_key.pem
+certificate.p12
+```
